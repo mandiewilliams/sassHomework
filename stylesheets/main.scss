@@ -1,0 +1,51 @@
+@import '../bourbon/bourbon';
+
+@import "colors";
+@import "fonts";
+
+$defaultfont: "CooperHewitt-Light", sans-serif;
+
+body {
+	background-color: $ltltpink;
+}
+
+h1, h2 {
+	font-family: "CooperHewitt-Medium", sans-serif;
+}
+
+#banner {
+	width: 100%;
+	height: 300px;
+	margin:0 auto;
+	background-image: url("https://unsplash.imgix.net/45/QDSMoAMTYaZoXpcwBjsL__DSC0104-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=86abed690c313fd5eabe8bc64c11a7b2");
+
+}
+#feature h1 {
+	font-family: "CooperHewitt-ThinItalic", sans-serif;
+}
+
+%button {
+	background-color: $pink;
+	border: 2px solid black;
+	text-transform: uppercase;
+	color: white;
+	line-height: 5px;
+	padding-top: 5px;
+	font-family: $defaultfont;
+	height: 30px;
+	border-radius: 5px;
+}
+.button-one {
+	@extend %button;
+
+}
+#image {
+	max-height: 300px;
+	max-width: 450px;
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#image :hover {
+	opacity: 0.5;
+}

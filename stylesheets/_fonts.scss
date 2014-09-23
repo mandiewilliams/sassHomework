@@ -1,0 +1,13 @@
+body {
+	font-family: "CooperHewitt-Light", sans-serif;
+}
+
+$ital: "Cooper-Hewitt-ThinItalic", sans-serif;
+
+$font-size: 12px;
+
+@for $i from 1 through 6 {
+	.font-size-#{$i*12} {
+		font-size: $i*12px;
+	}
+}
